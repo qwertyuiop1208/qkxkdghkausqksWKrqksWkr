@@ -1,0 +1,37 @@
+<!DOCTYPE html> 
+
+<html>
+
+<head>
+
+  <title>바탕화면 반짝</title>
+
+  <script>
+
+    var fileNm  = ['https://th.bing.com/th/id/OIP.oIoVeebHnEyfAzH3Ejg2ygHaEV?pid=ImgDet&rs=1', 'hhttps://t1.daumcdn.net/cfile/tistory/99531D415E170D2918', 'https://t1.daumcdn.net/cfile/blog/2154F33E53A5AF2132'];
+
+
+
+    function imgChange(){
+
+      var url = "url(" + fileNm[Math.floor(Math.random() * 3)] + ")";
+
+      document.getElementById("bgGround").style.backgroundImage = url;
+
+    }
+
+  </script>
+
+</head>
+
+<body>
+
+  <div id="bgGround" style="width:100%; height:500px; background-color:#464646; background-repeat:no-repeat; background-position:center;"></div>
+
+  <br>
+
+  <input type="button" value="바탕화면 바꾸기" onclick="imgChange();" />
+
+</body> 
+
+</html>
